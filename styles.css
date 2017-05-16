@@ -1,0 +1,165 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    font-family: 'Khula', sans-serif;
+    font-size: 16px;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+}
+
+.nav-bar ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: palegoldenrod;
+}
+
+.nav-bar li a {
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.nav-bar li a:hover {
+    background-color: gold;
+}
+
+aside {
+    position: absolute;
+    display: non
+}
+
+.ad {
+    background: pink;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+}
+
+.ad span {
+    height: 500px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    clear: both;
+}
+
+header {
+    background-color: aquamarine;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Anthon', serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+header h2 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+article {
+    background-color: cornflowerblue;
+    margin: 5px;
+    flex: 1 20%;
+    min-width: 250px;
+    padding: 10px;
+}
+
+main article p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-family: 'Anthon', serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.post_date {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-family: 'Anthon', serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+
+main {
+    clear: both;
+}
+
+footer {
+    background-color: skyblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@media (max-width: 1250px) {
+    aside {
+        display: none;
+    }
+    
+    header {
+        border-radius: 0;
+    }
+    
+    footer {
+        border-radius: 0;
+    }
+    
+}
